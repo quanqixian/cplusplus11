@@ -6,6 +6,9 @@
  * ***************/
 #include <vector>
 #include <string>
+#include <list>
+#include <iostream>
+#include <algorithm>
 
 using namespace std;
 double f()
@@ -30,6 +33,18 @@ int main(int argc,const char*argv[])
 	//...
 	auto pos = v.begin();  //pos has tyoe vector<string>::iterator
 
+	//other example
+	list<string> c;
+	c.push_back(string("a"));
+	c.push_back(string("b"));
+	string target = "a";
+	
+	list<string>::iterator ite;
+	ite = find(c.begin(), c.end(), target);
+	cout<<*ite<<endl;
+
+	auto it=find(c.begin(), c.end(), target);
+	cout<<*it<<endl;
 
 	return 0;
 }
