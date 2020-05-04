@@ -31,7 +31,7 @@ int main(int argc,const char*argv[])
 	 */
 	vector<string> v;
 	//...
-	auto pos = v.begin();  //pos has tyoe vector<string>::iterator
+	auto pos = v.begin();  //pos has type vector<string>::iterator
 
 	//other example
 	list<string> c;
