@@ -1,0 +1,10 @@
+C++11 lets you use nulptr instead of 0 or NULL to specify that a  pointer refers
+to no value (which differs from having an underfined value). This new feature
+especially helps to avoid mistakes that orrurred when a null pointer was
+interpreted as an integral value.For examples:
+
+void f(int);
+void f(void*);
+f(0);       //calls f(int)
+f(NULL);    //calls f(int) if NULL is 0,ambiguous otherwise
+f(nullptr); //calls f(void*)
