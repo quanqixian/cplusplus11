@@ -33,6 +33,12 @@ int main(int argc,const char*argv[])
 	//...
 	auto pos = v.begin();  //pos has type vector<string>::iterator
 
+	auto l = [](int x)->bool {// l has the type of a lambda 
+		if(x>5)               // taking an int and returning a bool 
+			return true;
+		else 
+			return false;
+	};
 	//other example
 	list<string> c;
 	c.push_back(string("a"));
