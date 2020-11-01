@@ -17,12 +17,12 @@ int main(int argc,const char*argv[])
 	/**
 	 * Before c++11,programmers,especially novices,could easily become confused
 	 * by the question of how to initialize a variable or an
-	 * object.Initialization could happen with parentheses,braces,and/or
-	 * assignment operators.
+	 * object.Initialization could happen with [ parentheses ],[ braces ],and/or
+	 * [ assignment operators ].
 	 */
 
 	/**
-	 * For this reason, c++11 introduced the concept of uniform initialization,
+	 * For this reason, c++11 introduced the concept of [ uniform initialization ],
 	 * which means that for any initialization,you can use one common
 	 * syntax,this syntax uses braces,so the following is possible now:
 	 */
