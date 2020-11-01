@@ -45,12 +45,13 @@ int main(int argc,const char*argv[])
 	c.push_back(string("b"));
 	string target = "a";
 	
+#if 0
 	list<string>::iterator ite;
 	ite = find(c.begin(), c.end(), target);
 	cout<<*ite<<endl;
-
+#else
 	auto it=find(c.begin(), c.end(), target);
 	cout<<*it<<endl;
-
+#endif 
 	return 0;
 }
