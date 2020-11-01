@@ -9,14 +9,14 @@
 
 
 /**
- * to support the cpncept os initializer lists for user-defined types,c++11
+ * To support the cpncept os initializer lists for user-defined types,c++11
  * provides the class template std::initializer_list<>.
  * It can be used to support initializations by a list of values or in any
  * other place where you want to process just a list of vlaues,For example:
  */
 void print(std::initializer_list<int> vals)
 {    
-	for(auto p = vals.begin();p != vals.end(); ++p)
+	for(auto p = vals.begin(); p != vals.end(); ++p)
 	{    
 		std::cout<< *p <<"\n";
 	}

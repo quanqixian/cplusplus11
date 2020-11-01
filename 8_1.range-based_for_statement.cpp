@@ -2,13 +2,22 @@
  * filename:
  * date    :
  * author  :
- * function:
+ * function: range-based for statement
  * ***************/
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
+
+template <typename T>
+void printElements(const T& coll)
+{
+	for(const auto& elem : coll)
+	{
+		cout<<elem<<endl;
+	}
+}
 
 int main(int argc,const char*argv[])
 {    
@@ -36,6 +45,8 @@ int main(int argc,const char*argv[])
 	{    
 		elem *= 3;
 	}
+
+	printElements(vec);
 
 	return 0;
 }

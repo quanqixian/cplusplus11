@@ -35,8 +35,13 @@ int main(int argc,const char*argv[])
 	P p(77,5);    /*	P(int, int)a=77,b=5 */
 
 	P q{77,5};    /*	P(initializer_list<int>),values=77 5 */
-	P r={77,5,42};/*	P(initializer_list<int>),values=77 5 42 */
-	P s={77,5};   /*	P(initializer_list<int>),values=77 5  */
+	P r = {77,5,42};/*	P(initializer_list<int>),values=77 5 42 */
+	P s = {77,5};   /*	P(initializer_list<int>),values=77 5  */
 
 	return 0;
 }
+/**
+ * Without the constructor for the initializer list, the constructor taking two
+ * ints would be called to initialize q and s, while the initialization of r
+ * woule be invalid.
+ */
