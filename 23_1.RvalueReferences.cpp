@@ -51,7 +51,7 @@ int main(int argc, const char *argv[])
 	 * 临时对象是一种右值，
 	 * 右值不可以放在左边
 	 * test02和test03是看起来特殊的情况
-	 * /
+	 */
 	test01();
 	test02();
 	test03();
